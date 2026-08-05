@@ -343,18 +343,24 @@
         }
 
         .avatar-box {
-            width: 140px;
-            height: 140px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
+            overflow: hidden;
+            background: var(--bg-secondary);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4rem;
-            color: #fff;
             margin-bottom: 20px;
-            border: 4px solid var(--bg-primary);
+            border: 3px solid var(--accent-cyan);
             box-shadow: 0 0 25px rgba(6, 182, 212, 0.4);
+        }
+
+        .avatar-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
 
         .profile-name {
@@ -959,7 +965,7 @@
                 <div class="hero-image-wrapper">
                     <div class="profile-card">
                         <div class="avatar-box">
-                            <i class="fa-solid fa-user-shield"></i>
+                            <img src="profile.jpg" alt="Shah Alom Hossain">
                         </div>
                         <h3 class="profile-name">Shah Alom Hossain</h3>
                         <p class="profile-role">Cyber Security Engineer (Aspiring)</p>
